@@ -596,8 +596,8 @@ class CommonTaxCollector extends AbstractTotal
         $address = $shippingAssignment->getShipping()->getAddress();
         $address->setBaseTaxAmount($baseTax);
         $address->setBaseSubtotalTotalInclTax($baseSubtotalInclTax);
-        $address->setSubtotal($total->getSubtotal());
-        $address->setBaseSubtotal($total->getBaseSubtotal());
+        //$address->setSubtotal($total->getSubtotal());
+        //$address->setBaseSubtotal($total->getBaseSubtotal());
 
         return $this;
     }
